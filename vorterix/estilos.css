@@ -1,0 +1,621 @@
+
+/* CSS DE ESCRITORIO YA TERMINADO */
+body, html {
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    background-color: rgb(0, 0, 0);
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+
+.grilla {
+    display: grid;
+    width: 100%;
+    height: 37rem;
+    grid-row-gap: 5rem;
+    grid-template-columns: repeat(5, 1fr); /* Cinco columnas iguales */
+    grid-template-rows: minmax(37rem, 1fr) minmax(25rem, 1fr) minmax(37rem, 1fr) minmax(37rem, 1fr) minmax(55.5rem, 1fr) minmax(48.1rem, 1fr) minmax(28rem, 1fr) minmax(1rem, 1fr);
+    grid-template-areas: 
+        "grillainicio grillainicio grillainicio grillainicio grillainicio"
+        "SobreMiranda SobreMiranda SobreMiranda SobreMiranda SobreMiranda"
+        "Sobrenosotros Sobrenosotros Sobrenosotros Sobrenosotros Sobrenosotros"
+        "programas programas programas programas programas"
+        "comentarios comentarios comentarios comentarios comentarios"
+        "formulario formulario formulario formulario formulario" 
+        "massobremiranda massobremiranda massobremiranda massobremiranda massobremiranda"
+        "footer footer footer footer footer";
+}
+.grillaform {
+    grid-area: formulario;
+    background-color: #0D0D0D;
+    display: grid;
+    height: 100%;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+      "banner"
+      "formularioEntrada";
+  }
+  
+  .banner {
+    grid-area: banner;
+    width: 100%;
+    background-color: #4D26B3;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 10rem;
+    
+    border-radius: 0.5rem;
+
+  }
+  .h4bannerEntrada{
+    margin: 0;
+    margin-top: 2rem;
+  }
+  
+  .formularioEntrada {
+    grid-area: formularioEntrada;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #formulario {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+  }
+  
+  .grillaNombrenum, .grillaColumna {
+    flex: 1 1 50%;
+    padding: 0.625rem;
+  }
+  
+  .grillaColumna {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+ 
+  .grillaboton input {
+    padding: 0.625rem 1.25rem;
+    background-color: #4D26B3;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+
+
+.grillainicio{
+padding-top: 5rem;
+    background-image: url("./imagenes/landimg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: grillainicio;
+    display: grid;
+        grid-row-gap: 5rem;
+
+    width: 100%;
+    height: 37rem;
+    grid-template-columns:50% 50% ;
+    grid-template-rows:100% ;
+    grid-template-areas: 
+    "anuncio  mail "
+}
+.anuncio{
+    grid-area: anuncio;
+    padding-left: 1.3rem; 
+    align-items: center; 
+}
+.mail{
+    grid-area: mail;
+    padding-left: 14rem;
+    text-align: left;
+
+    
+    
+}
+.pvortex{
+    margin-right: 2rem ;
+    font-size: 1.25rem;
+}
+
+.SobreMiranda{
+    height: 35rem;
+    grid-area: SobreMiranda;
+    background-image: url("./imagenes/miranda.png");
+    background-size:contain;
+    background-repeat: no-repeat; 
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+    border-radius: 0.9375rem;
+    
+}
+.h2SobreMiranda{
+    padding-right: 50%;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+.pSobreMiranda{
+    padding-right: 50%;
+    padding-left: 5%;
+    padding-top: 0%;
+
+}
+
+.Sobrenosotros{
+    height: 40rem;
+    grid-area: Sobrenosotros;
+    background-image: url("./imagenes/fotosobrenosotros.png");
+    background-repeat: no-repeat; 
+    background-size:contain;
+    margin-right: 0.625rem;
+
+}
+.h2Sobrenosotros{
+    padding-right: 50%;
+    padding-left: 5%;
+    padding-top: 1%;
+}
+.pSobrenosotros{
+    padding-right: 70%;
+    padding-left: 5%;
+    padding-top: 3%;
+   
+    
+}
+.programas{
+    
+    grid-area: programas;
+    background-image: url("./imagenes/imgvideos.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    margin-right: 0.625rem;
+    margin-left: 0.625rem;
+    background-size: 100% 100%;
+}
+.h2programas{
+    padding-right: 50%;
+    padding-left: 5%;
+    
+}
+
+.pprogramas{
+    padding-top: 24%;
+    text-align: center;
+    text-decoration: underline;
+}
+.pprogramas:hover {
+    color: #4D26B3; /* Color del texto cuando se pasa el cursor */
+    transition: color 0.3s ease
+}
+.comentarios{
+   
+    grid-area: comentarios;
+    background-image: url("./imagenes/imgcomentarios.png");
+ 
+    background-size:cover;
+
+    margin-right: 0.625rem;
+    margin-left: 0.625rem;
+}
+.imagen{
+   width: 65%;
+   height: auto;
+}
+.h2-comentarios{
+    color: rgb(255, 255, 255);
+    text-align: left;
+    
+    padding-right: 50%;
+    padding-left: 5%;
+    padding-top: 0%;
+   
+}
+.list {
+    display: flex;
+  
+    list-style: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  -ms-overflow-style: none;
+  }
+  .list::-webkit-scrollbar {
+    display: none;
+  }
+  .item { /* tamaño carrousel  */
+    margin-top: 2rem;
+    flex-shrink: 0;
+    width: 40rem;
+
+   scroll-snap-align: center;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  
+    font-family: sans-serif;
+    font-size: 64px;
+    font-weight: bold;
+  }
+
+  .list-wrapper {
+    position: relative;
+  }
+  
+  .button {
+    position: absolute;
+    top: 50%;
+  
+    width: 4rem;
+    height: 4rem;
+  
+    
+  }
+  
+  .button--previous {
+    left: 1.5rem;
+    border-radius: 100%;
+    transform: rotate(180deg);
+ 
+  }
+  
+  .button--next {
+    right: 1.5rem;
+    border-radius: 100%;
+
+  }
+  
+
+.form{
+    grid-area: form; 
+    background-image: url("./imagenes/imgform.png");
+    background-repeat: no-repeat; 
+    margin-right: 0.625rem;
+    margin-left: 0.625rem;
+    background-size: 100% 100%;
+}
+.h1form{
+    text-align: center;
+}
+select{
+    background-color: #2D2D2D;
+    border: #0D0D0D;
+    color: #ddd;
+    width: fit-content;
+    padding-block: 0.75rem;
+    padding-left: 2.5rem;
+    padding-right: 1.875rem;
+    border-radius: 0.3125rem;
+}
+.massobremiranda{
+    grid-area: massobremiranda;
+    background-image: url("./imagenes/mirandainfo.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+
+}
+.h2massobremiranda{
+    color: rgb(255, 255, 255);
+    text-align: left;
+    
+    padding-right: 31.25rem;
+    padding-left: 3.125rem;
+    padding-top: 0;
+
+}
+.pmassobremiranda{
+    color: rgb(255, 255, 255);
+    padding-top: 13%;
+    padding-left: 27%;
+    text-align: left;
+    text-decoration: underline;
+
+}
+footer{
+    background-color:  #0D0D0D;
+    grid-area: footer;
+    
+}
+.p-Copyright{
+    text-align: center;
+    font-size: 12px;
+
+}
+h1{
+    font-size: 90px;
+
+}
+h2{
+    font-size: 54px;
+   
+}
+h3{
+    font-size: 35px;
+}
+.h4boton{
+    font-size: 1.50rem;  
+     margin: 0;
+}
+h4{
+    font-size: 25px;
+}
+h1, h2, h3, h4{
+    font-family: "League Gothic", sans-serif;
+    font-weight: lighter;
+
+}
+p{
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+img{
+    display: block;
+}
+.footer-img{
+    margin: 0;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+.header-img{
+    margin: 0;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+input[ type="text" ]{
+    background-color: #2D2D2D;
+    border: #0D0D0D;
+    color: #ddd;
+    padding-block: 12px;  
+    padding-left: 40px;
+    padding-right: 30px;
+   border-radius: 5px;
+}
+
+input[ type= "number"]{
+    background-color: #2D2D2D;
+    border: #0D0D0D;
+    color: #ddd;
+    padding-block: 12px;  
+    padding-left: 40px;
+    padding-right: 30px;
+   border-radius: 5px;
+
+}
+input[ type="email" ]{
+    background-color: #2D2D2D;
+    border: #0D0D0D;
+    color: #ddd;
+    margin-left: 1%;
+    padding-block: 12px;  
+    padding-left: 40px;
+    padding-right: 80px;
+   border-radius: 5px;
+   
+}
+.Participar{ 
+    background-color: #c1ff05; 
+    color: #000000;  
+   margin-left: 2.8rem;
+   margin-top: 1.25rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+   border-radius: 0.5rem;
+   width: 18rem; 
+   height: 4rem;
+   
+}
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    white-space: wrap;
+    padding-left: 2rem;
+}
+.checkbox {
+    margin-right: 8px; 
+}
+input[ type="submit" ]{/* boton de participar */
+    background-color: #A5DB00;
+    color: #000000;  
+    font-family: "League Gothic", sans-serif;
+    font-size: 1.50rem; 
+    margin: 0;
+   border-radius: 5px;
+   width: 16rem; 
+   height: 3rem;
+   
+}
+button{ /* boton de flechas*/
+    background-color: #a4db00; 
+    color: #000000;  
+    
+}
+.correo{
+    margin-top: 4rem; 
+}
+.logovorterix{
+    margin-top: 1.25rem;
+}
+
+/* CONTENEDOR INVISIBLE - MENSAJE */
+
+
+.agradecimiento {
+    background-image:url(./imagenes/mirandaagr.png);
+    display: none; /* Oculto inicialmente */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1000;
+}
+
+
+#btn-volver {
+    background-color: #A5DB00;
+    color: black;
+    padding: 0.625rem 1.25rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1.25rem;
+}
+#btn-volver:hover {
+    background-color: #A8D15F;
+}
+
+
+
+
+/* A PARTIR DE ACÁ ES MOBILE */ 
+
+
+@media (max-width: 768px) {
+    .grilla {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "grillainicio"
+            "SobreMiranda"
+            "Sobrenosotros"
+            "programas"
+            "comentarios"
+            "formulario"
+            "massobremiranda"
+            "footer";
+    }
+    .miimagen {
+        display: none;
+    }
+    .grillainicio {
+        background-image: url(./imagenes/mirandamobile.png);
+        background-size: cover;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "anuncio"
+            "mail";
+        height: auto;
+    }
+
+    .anuncio, .mail {
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+    }
+    
+
+    .SobreMiranda, .Sobrenosotros, .programas, .comentarios, .form, .massobremiranda {
+        margin: 1.25rem 0.625rem;
+        background-position: center;  
+        
+    }
+    .SobreMiranda{
+        background-image: url(./imagenes/sobremirandamobile.png);
+background-size: contain;
+    }
+    .h2SobreMiranda{
+    }
+    .Sobrenosotros{
+        background-image: url(./imagenes/nosm.png);
+        background-size: contain;
+    }
+    .programas{
+        background-image: url(./imagenes/progm.png);
+        background-size: contain;
+       
+    }
+    .comentarios{
+        margin-top: 4rem;
+    grid-area: comentarios;
+    background-image: url(./imagenes/imgcomentarios.png);
+    background-repeat: no-repeat;
+    margin-right: 0.625rem;
+    margin-left: 0.625rem;
+    }
+
+    .list-wrapper {
+        height: max-content;
+    }
+
+    .h2SobreMiranda, .h2Sobrenosotros, .h2programas, .h2-comentarios, .h2massobremiranda {
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    .pSobreMiranda, .pSobrenosotros, .pprogramas, .pmassobremiranda {
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    .formularioEntrada {
+        flex-direction: column;
+    }
+
+    #formulario {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .grillaNombrenum, .grillaColumna {
+        width: 100%;
+        padding: 5px;
+    }
+
+    input[type="email"] {
+        padding-right: 40px;
+    }
+
+    .Participar {
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: 0;
+    }
+
+    .agradecimiento {
+        align-items: center;
+    }
+
+    .cont-a{
+        padding: 2em;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
